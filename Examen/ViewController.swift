@@ -32,10 +32,9 @@ class ViewController: UIViewController {
         
         self.albumListTable.delegate = self
         self.albumListTable.dataSource = self
-        let nibCellFood = UINib(nibName: "SongsTableViewCell", bundle: .main)
-        self.albumListTable.register(nibCellFood, forCellReuseIdentifier: "cellSongs")
+        self.albumListTable.register( SongTableViewCell.nib, forCellReuseIdentifier: SongTableViewCell.identifier)
+        
     }
-
 }
 
 extension ViewController: UITableViewDelegate & UITableViewDataSource{
@@ -45,13 +44,15 @@ extension ViewController: UITableViewDelegate & UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellSongs = albumListTable.dequeueReusableCell(withIdentifier: "cellSongs", for: indexPath) as?
-        SongsTableViewCell ?? SongsTableViewCell()
-        cellSongs.lblCellSongName.text = arrTDSongs[indexPath.row]
-        cellSongs.lblCellAlbumName.text = albumName
-        cellSongs.lblcellArtistName.text = artistName
-        cellSongs.CellImageAlbum.image = UIImage(named: "TDCC")
+        let cellSongs = albumListTable.dequeueReusableCell(withIdentifier: SongTableViewCell.identifier, for: indexPath) as?
+        SongTableViewCell ?? SongTableViewCell()
+        cellSongs.lblSongTitle.text = arrTDSongs[indexPath.row]
+      //  cellSongs.lblCellAlbumName.text = albumName
+      //  cellSongs.lblcellArtistName.text = artistName
+       // cellSongs.CellImageAlbum.image = UIImage(named: "TDCC")
         return cellSongs
     }
     
 }
+
+
