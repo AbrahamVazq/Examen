@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbP-DE-l3S">
-                                <rect key="frame" x="10" y="19" width="394" height="350"/>
+                                <rect key="frame" x="10" y="35" width="394" height="350"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sd7-eD-CHi">
                                         <rect key="frame" x="5" y="25" width="180" height="130"/>
@@ -70,10 +70,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brk-tj-H9f">
-                                <rect key="frame" x="10" y="379" width="394" height="497"/>
+                                <rect key="frame" x="10" y="395" width="394" height="481"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Iue-Eo-hpV">
-                                        <rect key="frame" x="5" y="10" width="384" height="477"/>
+                                        <rect key="frame" x="5" y="10" width="384" height="461"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="sectionIndexColor" systemColor="systemPinkColor"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -99,7 +99,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wbP-DE-l3S" secondAttribute="trailing" constant="10" id="saf-ih-0CU"/>
                             <constraint firstItem="wbP-DE-l3S" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="35" id="tFF-1I-Glo"/>
                             <constraint firstAttribute="bottom" secondItem="brk-tj-H9f" secondAttribute="bottom" constant="20" id="uG5-e6-Ibh"/>
-                            <constraint firstItem="wbP-DE-l3S" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="19" id="uk1-uJ-ya7"/>
                             <constraint firstItem="wbP-DE-l3S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="vQU-M4-ubn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="brk-tj-H9f" secondAttribute="trailing" constant="10" id="vqv-Lh-xho"/>
                         </constraints>
